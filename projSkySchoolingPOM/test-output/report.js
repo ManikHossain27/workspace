@@ -117,7 +117,8 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.i_click_on_Longin_Button_Menu()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d112.0.5615.138)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027MANIK\u0027, ip: \u0027192.168.31.82\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\rjman\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 8971c27e00a923137c1d3231b01b30a4\n*** Element info: {Using\u003dxpath, value\u003d//a[@href\u003d\u0027elogin.php\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat base.Base.click(Base.java:12)\r\n\tat pages.LandingPage.click_Login_Btn(LandingPage.java:18)\r\n\tat stepDefinitions.TestCase_Employee_Login_Functionalities.i_click_on_Longin_Button_Menu(TestCase_Employee_Login_Functionalities.java:26)\r\n\tat ✽.I click on Longin Button Menu(file:///C:/Java/git/workspace/projSkySchoolingPOM/src/test/resources/features/TestCase_Employee_Login_Functionalities.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "Verify I am in Employee login Page",
@@ -127,7 +128,7 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.verify_I_am_in_Employee_login_Page()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I enter login Id \"testpilot@gmail.com\"",
@@ -137,7 +138,7 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.i_enter_login_Id(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I enter Password \"1234\"",
@@ -147,7 +148,7 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.i_enter_Password(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "Click on Login Button",
@@ -157,7 +158,7 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.click_on_Login_Button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I will be on empLoginPage",
@@ -167,8 +168,9 @@ formatter.match({
   "location": "stepDefinitions.TestCase_Employee_Login_Functionalities.i_will_be_on_empLoginPage()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
+formatter.write("this is my failure message");
 formatter.after({
   "status": "passed"
 });

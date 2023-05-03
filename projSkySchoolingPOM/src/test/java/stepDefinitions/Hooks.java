@@ -17,6 +17,7 @@ public class Hooks extends Base {
 		ChromeOptions options = new ChromeOptions();
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver(options);
+		driver.manage().window().maximize();
 	}
 	@After
 	public void tearDown(Scenario scenario) {
